@@ -1,6 +1,6 @@
 //
 //  main.c
-//  C to F
+//  Calculate The Interst
 //
 //  Created by APPLE on 23/08/18.
 //  Copyright © 2018 APPLE. All rights reserved.
@@ -8,14 +8,22 @@
 
 #include <stdio.h>
 
-int main() {
-    float celsius, fahrenheit;
+int main()
+{
+    float principle, time, rate, SI;
     
-    printf("\nEnter temp in celsius : ");
-    scanf("%f", &celsius);
+    printf("Enter principle amount: ");
+    scanf("%f", &principle);
     
-    fahrenheit = (1.8 * celsius) + 32;
-    printf("\nTemperature in fahrenheit : %f ", fahrenheit);
+    printf("Enter time: ");
+    scanf("%f", &time);
     
-    return (0);
+    printf("Enter rate: ");
+    scanf("%f", &rate);
+    
+    SI = (principle * time * rate) / 100;
+    
+    printf("Simple Interest = %f", SI);
+    
+    return 0;
 }
